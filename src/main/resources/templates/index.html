@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+</head>
+<body>
+
+  <section layout:fragment="template">
+
+    <div th:insert="~{layout/photo-section :: photo-section}"></div>
+    <div th:insert="~{layout/about-section :: about}"></div>
+
+  </section>
+
+</body>
+</html>
